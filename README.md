@@ -22,7 +22,35 @@ Call the service in your controller
   ```javascript
   angular.module('app').controller('geoCtrl',['geoConverter',function(geoConverter){
     var coordinates = geoConverter.lambert2wgs(595833,2418928);
+    var coordinateX = coordinates.latitude;
+    var coordinateY = coordinates.longitude;
   }])
   ```
   
+## Convertions
+Available convertions in current package:
+
+### Lambert 2 to WGS84
+
+  ```javascript
+  var coordinates = geoConverter.lambert2wgs(595833,2418928);
+  ```
+  
+### Lambert 2 to NTF
+
+  ```javascript
+  var coordinates = geoConverter.lambert2ntf(595833,2418928);
+  ```
+  
+### Lambert 2 to ED50
+
+  ```javascript
+  var coordinates = geoConverter.lambert2ed50(595833,2418928);
+  ```
+  
+### Lambert 2 to UTM
+
+  ```javascript
+  var coordinates = geoConverter.lambert2utm(595833,2418928);
+  ```
   
