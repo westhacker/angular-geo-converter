@@ -8,7 +8,7 @@ This angular service aims to convert geodetic coordinates, including Lambert 2, 
 Add the script dependence of angular-geo-convert.js:
 
   ```javascript
-  <script src="angular-geo-convert.js"></script>
+  <script src="angular-geo-converter.js"></script>
   ```
   
 Add the module dependence in your root module of your angular application:
