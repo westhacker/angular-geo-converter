@@ -3,7 +3,7 @@ angular.module("geoConverter")
     return {
         lambert2wgs : function(x,y){
             //Lambert 2 init values
-            location = {};
+            var location = {};
             location.T_X_Lamb = {};
             location.T_Y_Lamb = {};
             location.T_X_Lamb.value = x;
@@ -53,7 +53,7 @@ angular.module("geoConverter")
         },
 		lambert2ntf : function(x,y){
             //Lambert 2 init values
-            location = {};
+            var location = {};
             location.T_X_Lamb = {};
             location.T_Y_Lamb = {};
             location.T_X_Lamb.value = x;
@@ -76,7 +76,7 @@ angular.module("geoConverter")
         },
 		lambert2ed50 : function(x,y){
             //Lambert 2 init values
-            location = {};
+            var location = {};
             location.T_X_Lamb = {};
             location.T_Y_Lamb = {};
             location.T_X_Lamb.value = x;
@@ -109,7 +109,7 @@ angular.module("geoConverter")
         },
 		lambert2utm : function(x,y){
             //Lambert 2 init values
-            location = {};
+            var location = {};
             location.T_X_Lamb = {};
             location.T_Y_Lamb = {};
             location.T_X_Lamb.value = x;
