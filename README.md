@@ -30,25 +30,25 @@ Call the service in your controller
 ## Convertions
 Available convertions in current package:
 
-### Lambert 2 to WGS84
+* Lambert 2 to WGS84
 
   ```javascript
   var coordinates = geoConverter.lambert2wgs(595833,2418928);
   ```
   
-### Lambert 2 to NTF
+* Lambert 2 to NTF
 
   ```javascript
   var coordinates = geoConverter.lambert2ntf(595833,2418928);
   ```
   
-### Lambert 2 to ED50
+* Lambert 2 to ED50
 
   ```javascript
   var coordinates = geoConverter.lambert2ed50(595833,2418928);
   ```
   
-### Lambert 2 to UTM
+* Lambert 2 to UTM
 
   ```javascript
   var coordinates = geoConverter.lambert2utm(595833,2418928);
