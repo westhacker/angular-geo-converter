@@ -146,8 +146,94 @@ angular.module("geoConverter")
                 latitude:location.T_X_UTM.value, 
                 longitude:location.T_Y_UTM.value,
             }
-        }
-		
+        },
+        wgs2lambert : function（x,y）{
+        	var location = {};
+        	//WGS init value
+        	location.T_Lat_Deg_W = {}
+            location.T_Lat_Min_W = {}
+            location.T_Lat_Sec_W = {}
+            location.T_Long_Deg_W = {}
+            location.T_Long_Min_W = {}
+            location.T_Long_Sec_W = {}
+            location.selectNS3 = {}
+            location.selectEW3 = {}
+            location.T_Lat_Deg_W.value = x;
+            location.T_Long_Deg_W.value = y;
+            //Convert WGS to ED50
+            location.T_Lat_Deg_P = {}
+            location.T_Lat_Min_P = {}
+            location.T_Lat_Sec_P = {}
+            location.T_Long_Deg_P = {}
+            location.T_Long_Min_P = {}
+            location.T_Long_Sec_P = {}
+            location.selectNS1 = {}
+            location.selectEW1 = {}
+            WGS_ED50(location);
+            //convert ED50 to NTF
+            location.T_Lat_Deg_G = {}
+            location.T_Lat_Min_G = {}
+            location.T_Lat_Sec_G = {}
+            location.T_Long_Deg_G = {}
+            location.T_Long_Min_G = {}
+            location.T_Long_Sec_G = {}
+            location.selectNS2 = {}
+            location.selectEW2 = {}
+            Hayford_Clarke(location);
+            //convert NTF to Lambert
+            location.T_X_Lamb = {};
+            location.T_Y_Lamb = {};
+            NTF_Lambert(location);
+        },
+        ed502ntf : function（x,y）{
+        	var location = {};
+            //ED50 init values
+            location.T_Lat_Deg_P = {}
+            location.T_Lat_Min_P = {}
+            location.T_Lat_Sec_P = {}
+            location.T_Long_Deg_P = {}
+            location.T_Long_Min_P = {}
+            location.T_Long_Sec_P = {}
+            location.selectNS1 = {}
+            location.selectEW1 = {}
+            location.T_Lat_Deg_P.value = x;
+            location.T_Long_Deg_P.value = y;
+            //convert ED50 to NTF
+            location.T_Lat_Deg_G = {}
+            location.T_Lat_Min_G = {}
+            location.T_Lat_Sec_G = {}
+            location.T_Long_Deg_G = {}
+            location.T_Long_Min_G = {}
+            location.T_Long_Sec_G = {}
+            location.selectNS2 = {}
+            location.selectEW2 = {}
+            Hayford_Clarke(location);
+            //convert NTF to Lambert
+            location.T_X_Lamb = {};
+            location.T_Y_Lamb = {};
+            NTF_Lambda(location);
+        },
+        ed502utm : function（x,y）{
+        	var location = {};
+            //ED50 init values
+            location.T_Lat_Deg_P = {}
+            location.T_Lat_Min_P = {}
+            location.T_Lat_Sec_P = {}
+            location.T_Long_Deg_P = {}
+            location.T_Long_Min_P = {}
+            location.T_Long_Sec_P = {}
+            location.selectNS1 = {}
+            location.selectEW1 = {}
+            location.T_Lat_Deg_P.value = x;
+            location.T_Long_Deg_P.value = y;
+            //convert ED50 to UTM
+            location.T_Fus_UTM = {}
+            location.T_Ban_UTM = {}
+            location.T_Zon_UTM = {}
+            location.T_X_UTM = {}
+            location.T_Y_UTM = {}
+            ED50_UTM(location)
+		},
     };
 });
 
