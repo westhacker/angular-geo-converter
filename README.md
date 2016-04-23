@@ -36,10 +36,10 @@ Available convertions in current package:
   var coordinates = geoConverter.lambert2wgs(595833,2418928);
   ```
   
-* Lambert 2 to NTF
+* WGS84 to Lambert 2
 
   ```javascript
-  var coordinates = geoConverter.lambert2ntf(595833,2418928);
+  var coordinates = geoConverter.wgs2lambert(48.3413,2.3198);
   ```
   
 * Lambert 2 to ED50
@@ -59,16 +59,14 @@ Available convertions in current package:
  All convertions are supported. Just call like
  
   ```javascript
- geoConverter.geoIn2geoOut(x,y);
+ var coordinates = geoConverter.geoIn2geoOut(x,y);
   ```
+  
+  The available geodetic coordinates type for input and output
   
   ```sh
   geoIn : lambert, wgs, ntf, ed50, utm
   geoOut : lambert, wgs, ntf, ed50, utm
-  ```
-
-  ```javascript
-  var coordinates = geoConverter.geoIn2geoOut(x,y);
   ```
   
 License
