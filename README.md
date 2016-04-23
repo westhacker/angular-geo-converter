@@ -54,3 +54,11 @@ Available convertions in current package:
   var coordinates = geoConverter.lambert2utm(595833,2418928);
   ```
   
+* geoIn to geoOut
+All convertions are supported. Just call like geoConverter.geoIn2geoOut(x,y)
+geoIn : lambert, wgs, ntf, ed50, utm
+geoOut : lambert, wgs, ntf, ed50, utm
+
+  ```javascript
+  var coordinates = geoConverter.geoIn2geoOut(x,y);
+  ```
