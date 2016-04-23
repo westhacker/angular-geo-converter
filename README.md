@@ -55,9 +55,12 @@ Available convertions in current package:
   ```
   
 * geoIn to geoOut
-** All convertions are supported. Just call like geoConverter.geoIn2geoOut(x,y)
-*** geoIn : lambert, wgs, ntf, ed50, utm
-*** geoOut : lambert, wgs, ntf, ed50, utm
+** All convertions are supported. Just call like 
+  ```javascript
+ geoConverter.geoIn2geoOut(x,y);
+  ```
+  geoIn : lambert, wgs, ntf, ed50, utm
+  geoOut : lambert, wgs, ntf, ed50, utm
 
   ```javascript
   var coordinates = geoConverter.geoIn2geoOut(x,y);
