@@ -55,7 +55,9 @@ Available convertions in current package:
   ```
   
 * geoIn to geoOut
-** All convertions are supported. Just call like 
+
+ All convertions are supported. Just call like
+ 
   ```javascript
  geoConverter.geoIn2geoOut(x,y);
   ```
@@ -69,7 +71,7 @@ Available convertions in current package:
   var coordinates = geoConverter.geoIn2geoOut(x,y);
   ```
   
-# License
+License
 ----
 
 MIT
