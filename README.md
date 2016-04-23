@@ -59,9 +59,20 @@ Available convertions in current package:
   ```javascript
  geoConverter.geoIn2geoOut(x,y);
   ```
+  
+  ```sh
   geoIn : lambert, wgs, ntf, ed50, utm
   geoOut : lambert, wgs, ntf, ed50, utm
+  ```
 
   ```javascript
   var coordinates = geoConverter.geoIn2geoOut(x,y);
   ```
+  
+# License
+----
+
+MIT
+
+
+**Free Software, Hell Yeah!**
