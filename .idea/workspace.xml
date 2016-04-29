@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4494eaa0-0905-49e5-b99a-cddc3233c9cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/angular-geo-converter.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="angular-geo-converter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -133,12 +135,12 @@
       <workItem from="1461954758052" duration="86000" />
       <workItem from="1461955055321" duration="3000" />
       <workItem from="1461955412601" duration="22000" />
-      <workItem from="1461955520372" duration="253000" />
+      <workItem from="1461955520372" duration="310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="364000" />
+    <option name="totallyTimeSpent" value="421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="399" y="23" width="1230" height="777" extended-state="0" />
