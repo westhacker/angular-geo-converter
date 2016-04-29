@@ -1,4 +1,4 @@
-angular.module("geoConverter")
+angular.module("geoConverter",[])
 .factory('geoConverter', function () {
     
     var location = {};
@@ -178,7 +178,7 @@ angular.module("geoConverter")
                 longitude:location.T_Y_UTM.value,
             }
         },
-        ed502ntf : function（x,y）{
+        ed502ntf : function(x,y){
             //ED50 init values
             location.T_Lat_Deg_P.value = x;
             location.T_Long_Deg_P.value = y;
@@ -196,7 +196,7 @@ angular.module("geoConverter")
                 longitude:location.T_Long_Deg_G.value,
             }
         },
-        ed502utm : function（x,y）{
+        ed502utm : function(x,y){
             //ED50 init values
             location.T_Lat_Deg_P.value = x;
             location.T_Long_Deg_P.value = y;
@@ -328,7 +328,7 @@ angular.module("geoConverter")
                 longitude:location.T_Y_UTM.value,
             }
         },
-        utm2ntf : function（x,y）{
+        utm2ntf : function(x,y){
             //UTM init values
             location.T_Fus_UTM.value = 0;
             location.T_Ban_UTM.value = 0;
@@ -345,7 +345,7 @@ angular.module("geoConverter")
                 longitude:location.T_Long_Deg_G.value,
             }
         },
-        utm2ed50 : function（x,y）{
+        utm2ed50 : function(x,y){
             //UTM init values
             location.T_Fus_UTM.value = 0;
             location.T_Ban_UTM.value = 0;
