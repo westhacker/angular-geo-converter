@@ -1,5 +1,5 @@
 # angular-geo-converter
-Angular service to convert coordinates among different geodetic systems and most used projections
+Angular service to convert coordinates among different geodetic systems and most useful projections
 
 ## Introduction
 This angular service aims to convert geodetic coordinates, including Lambert 2, WGS84, UTM, NTF, ED50...
